@@ -1,0 +1,69 @@
+.aboutdiv{
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 65px);
+    width: 100vw;
+    scroll-snap-align: start;
+    overflow-y: hidden;
+}
+.qual{
+    overflow-y: hidden;
+    font-family: 'denk one';
+    letter-spacing: 0.12rem;
+    margin-bottom: 20px;
+}
+.jana{
+    overflow-y: hidden;
+    
+    font-family: 'denk one';
+    letter-spacing: 0.12rem;
+    margin-bottom: 20px;
+}
+.middle{
+    background: linear-gradient(180deg, rgba(253,255,252,1) 0%, rgba(187,250,170,1) 50%, rgba(253,255,252,0.9363095580028886) 100%);    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pic{
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+}
+.area{
+    height: 60%;
+    margin-left: 40px;
+    text-align: center;
+}
+.icon{
+    font-size: 180px;
+    margin-bottom: 120px;
+}
+.area::-webkit-scrollbar{
+        display: none;
+}
+
+
+@media only screen and (max-width: 730px){
+    .aboutdiv{
+        max-height: calc(100vh - 65px);
+    }
+    .icon{
+        display: none;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .area{
+        width: 95%;
+        height: 40%;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+}

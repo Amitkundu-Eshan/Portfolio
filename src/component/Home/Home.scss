@@ -1,0 +1,210 @@
+.homediv{
+    background: linear-gradient(180deg, rgba(232,237,230,1) 25%, rgba(253,255,252,0.9363095580028886) 96%);
+    height: calc(100vh - 65px);
+    width: 100vw;
+    scroll-snap-align: start;
+    overflow-y: hidden;
+}
+.kul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /*background-color:white ;*/
+    
+
+}
+.img{
+    width: 360px;
+    height: 500px;
+    
+}
+.na{
+    overflow-y: hidden;
+    font-family: Denk One,sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 54px;
+letter-spacing: 0.10em;
+color: #000000;
+margin-bottom: 20px;
+position: relative;
+width: 50%;
+padding-left: 20px;
+}
+.pro{
+    overflow-y: hidden;
+    font-family: Denk One;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 45px;
+letter-spacing: 0.12em;
+color: #006C11;
+margin-bottom: 40px;
+}
+.btton{
+    width: 28%;
+    font-family: Denk One;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: 100;
+    background: #006C11;
+border-radius: 69px;
+letter-spacing: 0.12em;
+color: #FFFFFF;
+text-decoration: none;
+height: 30%;
+padding: 15px;
+
+overflow-y: hidden;
+}
+.btton:hover{
+    background-color: white;
+    color: #006C11;
+    transition: 0.5s all ease-in;
+    border: 2px solid black;
+}
+.st{
+    font-size: 20px;
+    overflow-y: hidden;
+    color: #000000;
+    font-family: 'roboto';
+    font-weight: 400;
+}
+.ityped-cursor {
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.letter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+    margin-left: 80px;
+}
+.line{
+    position: absolute;
+width: 200%;
+right: 0;
+padding-left: 10px;
+
+border: 1px solid #000000;
+transform: rotate(90deg);
+background-color: #000000;
+}
+
+.mobile{
+    display: none;
+}
+.video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.homediv::-webkit-scrollbar{
+    display: none;
+  }
+.mobdiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+.btna{
+    height: 60px;
+    width: 165px;
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-left: 0px;
+    font-size: 18px;
+    color: #000000 !important;
+    letter-spacing: 0.12rem;
+    font-family: 'Denk one',sans-serif;
+    background-color: #FFFFFF;
+    border: 3px solid rgb(198, 236, 108);  
+    text-decoration: none;
+    position: relative;
+
+
+}
+.down{
+    position: absolute;
+    bottom: 1px;
+    right: 65px;
+    font-size: 26px !important;
+}
+.kikori{
+    color: rgb(198, 236, 108);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'denk one',sans-serif;
+    letter-spacing: 0.12rem;
+}
+.ami{
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'denk one',sans-serif;
+    letter-spacing: 0.20rem;
+    overflow-y: hidden;
+}
+.info{
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'roboto';
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 748px){
+
+
+    .kul{
+        display: none;
+    }
+    .mobile{
+        display: inline;
+    }
+    .video{
+        top: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow-y: hidden;
+    }
+    .video::-webkit-scrollbar{
+        display: none;
+      }
+}
+@media only screen and (max-width: 596px){
+    .mobdiv{
+        width: 100%;
+        height: 100%;
+    }
+}

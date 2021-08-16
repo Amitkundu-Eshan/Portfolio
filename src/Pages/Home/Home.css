@@ -1,0 +1,111 @@
+.homediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .homediv{
+        height: 2000px;
+        flex-direction: column;
+    }   
+}
+.imgdiv{
+    margin-left: 200px;
+    margin-top: 90px;
+    flex: 6;
+    
+}
+.image{
+    height: 37rem;
+}
+@media only screen and (max-width: 600px) {
+     .image{
+        height: 70rem;
+     } 
+     .imgdiv{
+        margin-left: 850px;
+        margin-top: 60px;
+        flex: 6;
+        
+    }
+}
+.line{
+    position: absolute;
+    width: 140px;
+background-color:black;
+top: 70px;
+right: 128px;
+border: 1px #000000 solid !important;
+transform: rotate(90deg);
+}
+.worddiv{
+    position: absolute;
+    top: 230px;
+    right: 690px;
+    
+}
+.name{
+    font-size: 50px ;
+    font-family: 'Denk One', sans-serif;
+    letter-spacing: 0.12rem;
+}
+.prof{
+position: absolute;
+width: 560px;
+height: 56px;
+margin-left: 0px;
+margin-top: 45px;
+font-size: 30px;
+font-family: 'Denk One', sans-serif;
+letter-spacing: 0.12rem;
+color: #006C11;
+    
+}
+.button{
+    position: absolute;
+width: 231px;
+height: 71px;
+left: 0px;
+top: 250px;
+font-family: 'Denk One', sans-serif;
+color: aliceblue;
+letter-spacing: 0.12em;
+background: #006C11;
+border-radius: 69px;
+padding-left: 30px;
+padding-top: 22px;
+font-size: 20px;
+cursor: pointer;
+}
+.button:hover{
+    transition: all 0.2s ease-in;
+    background-color: #6EEC59;
+    color: black;
+    border: 2px solid #006C11 ;
+}
+
+.arrow{
+    position: absolute;
+    margin-left: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .worddiv{
+        position: absolute;
+    top: 1300px;
+    right: 0px;
+    left: 450px;
+    }
+    .line{
+        display: none;
+    }
+    .name{
+        font-size: 80px ;
+        font-family: 'Denk One', sans-serif;
+        letter-spacing: 0.12rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .break{
+        display: none;
+    }
+}

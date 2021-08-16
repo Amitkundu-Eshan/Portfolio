@@ -1,0 +1,108 @@
+.projectsdiv{
+    background: linear-gradient(180deg, rgba(253,255,252,0.9363095580028886) 0%, rgba(196,203,193,1) 50%, rgba(255,255,255,1) 100%);
+    height: calc(100vh - 65px);
+    width: 100%;
+    scroll-snap-align: start;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.heading{
+    text-align: center;
+    font-family: "denk one";
+    color: #006C11;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+}
+.projects{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.projects::-webkit-scrollbar{
+    display: none;
+}
+.project{
+    position: relative;
+min-width: 320px;
+height: 495px;
+text-align: center;
+
+background: rgba(124, 233, 107, 0.31);
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 32px;
+margin-right: 80px;
+left: 40px;
+
+}
+.propic{
+    position: absolute;
+width: 50%;
+height: 30%px;
+left: 82px;
+top: 47px;
+border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 40px;
+object-fit: cover;
+}
+.prohed{
+    width: 100%;
+position: absolute;
+text-align: center;
+top: 230px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+
+color: #000000;
+}
+.textar{
+    width: 85%;
+    text-align: center;
+position: absolute;
+left: 20px;
+top: 280px;
+font-family: Roboto;
+font-style: normal;
+font-size: 15px;
+color: #000000;
+}
+.button{
+    position: absolute;
+left: 82px;
+top: 410px;
+background: rgba(0, 131, 22, 0.623);
+border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 43px;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #000000;
+font-weight: 700;
+letter-spacing: 0.08rem;
+cursor: pointer;
+}
+.button:hover{
+    background: rgb(253, 255, 254);
+    transition: 1s all ease-in-out;
+    color: #006C11;
+}
+
+//responsive
+
+@media only screen and (max-width: 748px){
+    .projects{
+        width: 90%;
+    }
+    .project{
+        left: 0px;
+    }
+
+}
