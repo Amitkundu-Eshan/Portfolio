@@ -32,21 +32,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-top: 7px;
-}
-.nav-item{
     margin-right: 30px;
+    margin-top: 7px;
+    letter-spacing: 0.10rem;
+}
+.bt{
+    display: block;
     font-size: 20px;
-    font-weight: normal;
-    text-decoration: none;
-    font-family: 'roboto';
+    margin-right: 20px;
     font-weight: 400;
-    letter-spacing: 0.12rem;
+    font-family: 'roboto';
+    text-decoration: none;
+    color: inherit !important;
 }
-.amiy{
-    border-bottom: solid 2px #6EEC59;
+.inactive{
+    color: #fbfcfa !important;
 }
+.active{
+    color: #6EEC59 !important;
+    border-bottom: #6EEC59 solid 2px;
+}
+
+
 
 
 /*responsive*/
